@@ -26,3 +26,12 @@ sx = np.ones(10)
 ab = np.arange(10,51)
 rand_normal = np.random.randn(5,5)
 print(rand_normal)
+
+#Menggunakan fungsi figur pada mathplotlib
+fig = plt.figure()
+axes = fig.add_axes([0.1,0.1,0.8,0.8])
+axes.plot(x,y)
+axes.set_x_label("Bulan ke-")
+axes.set_ylabel("Jumlah Kasus Covid 19 di Indonesia")
+plt.title("Contoh grafik eksponensial kasus covid 19 di Indonesia sejak 2020-2022")
+
