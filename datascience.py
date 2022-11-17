@@ -36,8 +36,21 @@ axes.set_x_label("Bulan ke-")
 axes.set_ylabel("Jumlah Kasus Covid 19 di Indonesia")
 plt.title("Contoh grafik eksponensial kasus covid 19 di Indonesia sejak 2020-2022")
 
-# menambahkan fitur baru
+
+# menambahkan fitur baru satu
 doc5 = nlp(u"It is better to give Apple than reactive hongkong $60.")
 for token in doc5:
     print(token.text,end=' | ')
 
+
+#menambahkan fitur baru dua
+nlp = sp.load('en_core_web_sm')
+mystring = '"We\'re moving to L.A.!"'
+doc = nlp(mystring)
+for token in doc:
+    print(token.text)
+    
+    
+doc2 = nlp(u"We're here to help! send small-mail, email support@site.com or visit us at https://www.oursite.com!")
+for t in doc2:
+    print(t.text)
