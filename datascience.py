@@ -1,6 +1,7 @@
 #  import library
 import matplotlib.pyplot as plt
 import numpy as np
+import spacy as sp
 
 #inisialisasi matplotlib
 %matplotlib inline
