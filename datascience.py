@@ -35,3 +35,8 @@ axes.set_x_label("Bulan ke-")
 axes.set_ylabel("Jumlah Kasus Covid 19 di Indonesia")
 plt.title("Contoh grafik eksponensial kasus covid 19 di Indonesia sejak 2020-2022")
 
+# menambahkan fitur baru
+doc5 = nlp(u"It is better to give Apple than reactive hongkong $60.")
+for token in doc5:
+    print(token.text,end=' | ')
+
